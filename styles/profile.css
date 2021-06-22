@@ -1,0 +1,81 @@
+header {
+  text-align: center;
+  padding: 15px;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* fixing header position*/
+
+body {
+  margin: 0;
+}
+
+#profile-page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+#profile-page > header {
+  grid-area: "header";
+}
+
+#profile-page > main {
+  grid-area: "main";
+  overflow: auto;
+  padding: 15px 5px 10px 5px;
+}
+
+#profile-page > footer {
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  justify-items: center;
+}
+
+.my-content {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+}
+
+/*tried to put name next to pic. I put border in red just to visualize it but I didn't get it.*/
+.about-debs {
+  display: grid;
+  align-items: center;
+}
+
+/*skill tags*/
+.skills {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills > li {
+  border: 1px solid rgb(211, 142, 211);
+  background-color: whitesmoke;
+  color: rgb(211, 142, 211);
+  padding: 0.25em;
+}
