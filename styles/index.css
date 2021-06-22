@@ -1,20 +1,56 @@
 @import '_base.css';
 
-/* fixing header */
-.app-title {
+header {
     text-align: center;
     padding: 15px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
 }
 
-h1 {
-    position: fixed;
-    top: 0;
-    width: 100%;
+footer {
+    text-align: center;
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 10px 20px 30px 10px;
 }
 
-/* Quiz contend cards */
+body {
+    margin: 0;
+}
+
+#quiz-app {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+#quiz-app > header {
+    grid-area: 'header';
+}
+
+#quiz-app > main {
+    grid-area: 'main';
+    overflow: auto;
+padding: 15px 5px 10px 5px;
+}
+
+#quiz-app > footer {
+grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+justify-items: center;
+gap: 8px;
+}
 
 .cards-content {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;s
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 35px 70px 35px 70px;
+    margin: 35px;
+}
+
+button {
+  justify-content: center;
 }
