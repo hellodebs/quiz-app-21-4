@@ -1,3 +1,5 @@
+@import "_base.css";
+
 header {
   text-align: center;
   padding: 15px;
@@ -44,6 +46,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 3fr);
   justify-items: center;
+  gap: 8px;
 }
 
 .my-content {
