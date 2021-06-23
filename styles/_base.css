@@ -5,33 +5,29 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 body {
   background-image: url("https://image.freepik.com/free-vector/abstract-minimal-white-background_23-2148887988.jpg");
   background-position: fixed;
+  background-size: cover;
 }
-
 .navbar-icons {
-  color: black;
   text-decoration: none;
-}
-
-header {
-  text-align: center;
-  padding: 15px;
-  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
   color: black;
-  background: linear-gradient(#e66465, #9198e5);
 }
-
-footer {
-  text-align: center;
+header {
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+  background: linear-gradient(#e9d7d7, #9198e5);
   padding: 15px;
-  box-shadow: rgb(38, 57, 77) 10px 20px 30px 10px;
+  text-align: center;
+  color: white;
+}
+footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px 10px;
+  padding: 15px;
+  text-align: center;
 }

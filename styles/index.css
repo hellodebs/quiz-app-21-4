@@ -1,78 +1,66 @@
 @import "_base.css";
-
 /* fixing header position*/
-
 body {
   margin: 0;
 }
-
 #quiz-app {
-  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
 }
-
 #quiz-app > header {
   grid-area: "header";
 }
-
 #quiz-app > main {
   grid-area: "main";
-  overflow: auto;
   padding: 15px 5px 10px 5px;
+  overflow: auto;
 }
-
 #quiz-app > footer {
   grid-template-rows: auto 1fr auto;
 }
-
 .main-content {
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
+  grid-template-rows: repeat(5, 5fr);
   justify-items: center;
   gap: 8px;
 }
-
 .cards-content {
+  position: relative;
+  margin: 35px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 35px 70px 35px 70px;
-  margin: 35px;
-  position: relative;
 }
-
 i.bookmark {
   position: absolute;
-  right: 20px;
   top: -8px;
+  right: 20px;
 }
-
 .subject-tags {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
   padding: 1em;
+  list-style-type: none;
   text-align: center;
+  gap: 7px;
 }
-
 .subject-tags > li {
   border: 1px solid rgb(211, 142, 211);
-  background-color: whitesmoke;
-  color: rgb(211, 142, 211);
-  padding: 0.3em;
   border-radius: 15%;
+  background-color: whitesmoke;
+  padding: 0.3em;
+  color: rgb(211, 142, 211);
   font-size: 12px;
 }
-
 .show-answer {
+  margin: 15px;
+  border-radius: 10%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background-color: rgb(203, 180, 245);
-  color: black;
-  border-radius: 10%;
   padding: 10px;
-  margin: 15px;
+  color: black;
 }
