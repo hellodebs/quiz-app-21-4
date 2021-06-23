@@ -20,7 +20,7 @@ body {
   margin: 0;
 }
 
-#quiz-app {
+#profile-page {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -28,34 +28,59 @@ body {
   grid-template-areas: "header" "main" "footer";
 }
 
-#quiz-app > header {
+#profile-page > header {
   grid-area: "header";
 }
 
-#quiz-app > main {
+#profile-page > main {
   grid-area: "main";
   overflow: auto;
   padding: 15px 5px 10px 5px;
 }
 
-#quiz-app > footer {
+#profile-page > footer {
   grid-template-rows: auto 1fr auto;
 }
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
+  grid-template-columns: repeat(5, 3fr);
   justify-items: center;
   gap: 8px;
 }
 
-.cards-content {
+.my-content {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  padding: 35px 70px 35px 70px;
-  margin: 35px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
 }
 
-button {
-  justify-content: center;
+img {
+  border-radius: 50%;
+  height: 200px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/*tried to put name next to pic. I put border in red just to visualize it but I didn't get it.*/
+.about-debs {
+  display: grid;
+  align-items: center;
+}
+
+/*skill tags*/
+.skills {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills > li {
+  border: 1px solid rgb(211, 142, 211);
+  background-color: whitesmoke;
+  color: rgb(211, 142, 211);
+  padding: 0.25em;
 }
