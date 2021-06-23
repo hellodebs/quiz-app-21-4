@@ -54,8 +54,32 @@ body {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 35px 70px 35px 70px;
   margin: 35px;
+  position: relative;
 }
 
 button {
   justify-content: center;
+}
+
+i.bookmark {
+  position: absolute;
+  right: 20px;
+  top: -8px;
+}
+
+.subject-tags {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 1em;
+}
+
+.subject-tags > li {
+  border: 1px solid rgb(211, 142, 211);
+  background-color: whitesmoke;
+  color: rgb(211, 142, 211);
+  padding: 0.3em;
+  border-radius: 50%;
+  font-size: 12px;
 }
