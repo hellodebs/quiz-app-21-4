@@ -24,8 +24,8 @@ header {
   text-align: center;
   padding: 15px;
   box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
-  color: white;
-  background-color: rgb(203, 180, 245);
+  color: black;
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 footer {
