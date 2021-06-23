@@ -30,10 +30,10 @@ body {
 .cards-content {
   position: relative;
   margin: 35px;
+  border-radius: 0.5em;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 35px 70px 35px 70px;
-  border-radius: 0.5em;
 }
 i.bookmark {
   position: absolute;
@@ -64,4 +64,9 @@ i.bookmark {
   background-color: rgb(203, 180, 245);
   padding: 10px;
   color: black;
+}
+
+p {
+  padding: 15px;
+  font-size: 12px;
 }
