@@ -70,3 +70,11 @@ p {
   padding: 15px;
   font-size: 12px;
 }
+
+.showanswer {
+  display: none;
+}
+
+.show-answer:target {
+  display: block;
+}
