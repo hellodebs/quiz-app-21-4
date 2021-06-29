@@ -5,7 +5,45 @@
   margin: 0;
   padding: 0;
 }
-
 html {
-  font-family: sans-serif;
+  font-family: raleway, Geneva, Tahoma, sans-serif;
+}
+body {
+  background-image: url("https://image.freepik.com/free-vector/abstract-minimal-white-background_23-2148887988.jpg");
+  background-position: fixed;
+  background-size: cover;
+}
+.navbar-icons {
+  text-decoration: none;
+  color: black;
+}
+header {
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+  background: linear-gradient(#e9d7d7, #9198e5);
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px 10px;
+  padding: 15px;
+  text-align: center;
+}
+.subject-tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  list-style-type: none;
+  text-align: center;
+  gap: 7px;
+}
+.subject-tags > li {
+  border: 1px solid rgb(211, 142, 211);
+  border-radius: 15%;
+  background-color: whitesmoke;
+  padding: 0.3em;
+  color: rgb(211, 142, 211);
+  font-size: 12px;
 }

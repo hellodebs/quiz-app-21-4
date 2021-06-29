@@ -1,45 +1,56 @@
 @import "_base.css";
+
 body {
   margin: 0;
 }
-#quiz-app {
+
+#create-page {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   height: 100vh;
 }
-#quiz-app > header {
+
+#create-page > header {
   grid-area: "header";
 }
-#quiz-app > main {
+
+#create-page > main {
   grid-area: "main";
   padding: 15px 5px 10px 5px;
   overflow: auto;
 }
-#quiz-app > footer {
+
+#create-page > footer {
   grid-template-rows: auto 1fr auto;
 }
 .main-content {
-  display: grid;
-  grid-template-rows: repeat(5, 5fr);
-  justify-items: center;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cards-content {
-  position: relative;
-  margin: 35px;
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 15px 0 15px 20px;
+  resize: none;
+  border-radius: 0.5em;
+}
+
+.create {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
   border-radius: 0.5em;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  padding: 35px 70px 35px 70px;
+  padding: 30px;
 }
-i.bookmark {
-  position: absolute;
-  top: -8px;
-  right: 20px;
-}
-.show-answer {
+
+.submit-button {
   margin: 15px;
   border-radius: 10%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -47,14 +58,4 @@ i.bookmark {
   background-color: rgb(203, 180, 245);
   padding: 10px;
   color: black;
-}
-p {
-  padding: 15px;
-  font-size: 12px;
-}
-.showanswer {
-  display: none;
-}
-.show-answer:target {
-  display: block;
 }

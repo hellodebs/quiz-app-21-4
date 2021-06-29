@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="styles/profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Gruppo&family=Montserrat+Alternates:wght@100;200&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Gruppo&family=Montserrat+Alternates:wght@100;200&family=Poiret+One&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c2b7795462.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body id="profile-page">
     <header><h1>Profile Page</h1></header>
@@ -24,20 +36,28 @@
           <p>I love coding and quizzing!</p>
         </div>
         <div class="my-content">
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GitHub</li>
+          <ul class="subject-tags">
+            <li>#HTML</li>
+            <li>#CSS</li>
+            <li>#GitHub</li>
           </ul>
         </div>
-        <div class="my-content"><button>LOGOUT PROFILE</button></div>
+        <div class="my-content">
+          <button class="logout-profile-button">LOGOUT PROFILE</button>
+        </div>
       </section>
     </main>
     <footer>
-      <div><a href="index.html">🏠</a></div>
-      <div>🔖</div>
-      <div>📜</div>
-      <div><a href="profile.html">👧🏻</a></div>
+      <div class="navbar-icons">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+      </div>
+      <div><i class="far fa-bookmark"></i></div>
+      <div>
+        <a href="create.html"><i class="far fa-sticky-note"></i></a>
+      </div>
+      <div>
+        <a href="profile.html"><i class="far fa-user-circle"></i></a>
+      </div>
     </footer>
   </body>
 </html>
