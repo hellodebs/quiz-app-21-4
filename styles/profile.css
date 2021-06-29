@@ -38,6 +38,7 @@ body {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 30px;
 }
+
 img {
   display: flex;
   justify-content: flex-start;
@@ -51,19 +52,7 @@ img {
   font-family: "alex brush", sans-serif;
   font-size: 2em;
 }
-/*skill tags*/
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  gap: 8px;
-}
-.skills > li {
-  border: 1px solid rgb(211, 142, 211);
-  background-color: whitesmoke;
-  padding: 0.25em;
-  color: rgb(211, 142, 211);
-}
+
 .logout-profile-button {
   margin: 15px;
   border-radius: 10%;
