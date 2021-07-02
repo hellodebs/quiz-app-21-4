@@ -38,6 +38,7 @@ i.bookmark {
   position: absolute;
   top: -8px;
   right: 20px;
+  font-size: 1.5em;
 }
 .show-answer {
   margin: 15px;
