@@ -17,7 +17,7 @@ for (let i = 0; i < answerElements.length; i++) {
   });
 }
 
-// toggle bookmark
+//  toggable bookmark
 
 const bookmarkButtons = document.querySelectorAll(".bookmarks");
 for (let i = 0; i < bookmarkButtons.length; i++) {
