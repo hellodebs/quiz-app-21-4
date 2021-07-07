@@ -1,3 +1,14 @@
+import { createCardComponent } from "./lib/card.js";
+import { data } from "./lib/db.js";
+
+const sectionElement = document.querySelector("section.quiz-cards");
+
+data.forEach((card) => {
+  const cardComponent = createCardComponent(card);
+  console.log(cardComponent);
+  sectionElement.append(cardComponent);
+});
+
 const showAnswerButtonElements =
   document.querySelectorAll("button.show-answer");
 const answerElements = document.querySelectorAll(".answers");
