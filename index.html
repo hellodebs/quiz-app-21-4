@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
+
     <script
       src="https://kit.fontawesome.com/c2b7795462.js"
       crossorigin="anonymous"
@@ -16,11 +17,13 @@
     <main class="main-content">
       <section class="quiz-cards">
         <div class="cards-content">
-          <i class="far fa-bookmark bookmark"></i>
+          <i class="far fa-bookmark bookmarks"></i>
           <h2>Question</h2>
           <p>How many programming languages currently exist?</p>
           <button class="show-answer">Show Answer</button>
-
+          <p class="answers hidden">
+            Round about 700 programmer languages exist.
+          </p>
           <ul class="subject-tags">
             <li>#coding</li>
             <li>#nerd</li>
@@ -28,11 +31,17 @@
           </ul>
         </div>
         <div class="cards-content">
-          <i class="far fa-bookmark bookmark"></i>
+          <i class="far fa-bookmark bookmarks"></i>
           <h2>Question</h2>
-          <p>Which planet is the closest to the sun?</p>
+          <p>How many programmers are there in Europe?</p>
 
           <button class="show-answer">Show Answer</button>
+          <p class="answers hidden">
+            Europe currently has an estimated 6.1 million professional
+            developers (with an increase from 5.7 million from 2018) with
+            approximately 300k in Poland. Germany and the United Kingdom have
+            the highest number of developers in Europe.
+          </p>
           <ul class="subject-tags">
             <li>#planet</li>
             <li>#galaxy</li>
@@ -40,42 +49,62 @@
           </ul>
         </div>
         <div class="cards-content">
-          <i class="far fa-bookmark bookmark"></i>
+          <i class="far fa-bookmark bookmarks"></i>
           <h2>Question</h2>
-          <p>What is the largest country in the world?</p>
+          <p>How many female developer exist currently in the world (in %)?</p>
           <button class="show-answer">Show Answer</button>
-          <ul class="subject-tags">
-            <li>#world</li>
-            <li>#earth</li>
-            <li>#knowledge</li>
-          </ul>
-        </div>
-        <div class="cards-content">
-          <i class="far fa-bookmark bookmark"></i>
-          <h2>Question</h2>
-          <p>What is the biggest animal in the world?</p>
-
-          <button class="show-answer">Show Answer</button>
-          <ul class="subject-tags">
-            <li>#animal</li>
-            <li>#quiz</li>
-            <li>#knowledge</li>
-          </ul>
-        </div>
-        <div class="cards-content">
-          <i class="far fa-bookmark bookmark"></i>
-          <h2>Question</h2>
-          <p>How many female developer exist currently in the world?</p>
-
-          <button class="show-answer">Show Answer</button>
+          <p class="answers hidden">
+            According to a global software developer survey in 2020, the vast
+            majority of developers are the male gender, accounting for 91.5
+            percent of all respondents. Female developers amounted to only eight
+            percent of all respondents, demonstrating the male-dominating
+            reality of the software development job. - means round about 8%.
+          </p>
           <ul class="subject-tags">
             <li>#helloworld</li>
             <li>#womenintech</li>
             <li>#femaledevs</li>
           </ul>
         </div>
+        <div class="cards-content">
+          <i class="far fa-bookmark bookmarks"></i>
+          <h2>Question</h2>
+          <p>What is the imposter syndrome?</p>
+
+          <button class="show-answer">Show Answer</button>
+          <p class="answers hidden">
+            Imposter syndrome is loosely defined as doubting your abilities and
+            feeling like a fraud. It disproportionately affects high-achieving
+            people, who find it difficult to accept their accomplishments. Many
+            question whether they're deserving of accolades.
+          </p>
+          <ul class="subject-tags">
+            <li>#impostersyndrome</li>
+            <li>#doubts</li>
+            <li>#believeinyourself</li>
+          </ul>
+        </div>
+        <div class="cards-content">
+          <i class="far fa-bookmark bookmarks"></i>
+          <h2>Question</h2>
+          <p>What is a terminal used for?</p>
+
+          <button class="show-answer">Show Answer</button>
+          <p class="answers hidden">
+            Using a terminal allows us to send simple text commands to our
+            computer to do things like navigate through a directory or copy a
+            file, and form the basis for many more complex automations and
+            programming skills.
+          </p>
+          <ul class="subject-tags">
+            <li>#terminal</li>
+            <li>#oldbutgold</li>
+            <li>#blackbox</li>
+          </ul>
+        </div>
       </section>
     </main>
+
     <footer>
       <div class="navbar-icons">
         <a href="index.html"><i class="fas fa-home"></i></a>
@@ -88,5 +117,6 @@
         <a href="profile.html"><i class="far fa-user-circle"></i></a>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

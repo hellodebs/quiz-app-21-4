@@ -34,11 +34,13 @@ body {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 35px 70px 35px 70px;
 }
-i.bookmark {
+i.bookmarks {
   position: absolute;
   top: -8px;
   right: 20px;
+  font-size: 1.5em;
 }
+
 .show-answer {
   margin: 15px;
   border-radius: 10%;
@@ -52,9 +54,6 @@ p {
   padding: 15px;
   font-size: 12px;
 }
-.showanswer {
+.hidden {
   display: none;
-}
-.show-answer:target {
-  display: block;
 }
