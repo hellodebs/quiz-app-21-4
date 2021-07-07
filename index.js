@@ -5,7 +5,7 @@ const sectionElement = document.querySelector("section.quiz-cards");
 
 data.forEach((card) => {
   const cardComponent = createCardComponent(card);
-  console.log(cardComponent);
+  //console.log(cardComponent);
   sectionElement.append(cardComponent);
 });
 
