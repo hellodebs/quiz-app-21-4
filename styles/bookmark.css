@@ -1,0 +1,29 @@
+@import "_base.css";
+
+body {
+  margin: 0;
+}
+#quiz-app {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+#quiz-app > header {
+  grid-area: "header";
+}
+#quiz-app > main {
+  grid-area: "main";
+  padding: 15px 5px 10px 5px;
+  overflow: auto;
+}
+#quiz-app > footer {
+  grid-template-rows: auto 1fr auto;
+}
+.main-content {
+  display: grid;
+  grid-template-rows: repeat(5, 5fr);
+  justify-items: center;
+  gap: 8px;
+}
